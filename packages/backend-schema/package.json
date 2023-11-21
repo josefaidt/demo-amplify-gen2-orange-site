@@ -1,0 +1,11 @@
+{
+  "name": "backend-schema",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "exports": "./schema.ts",
+  "devDependencies": {
+    "@aws-amplify/backend": "^0.5.3",
+    "typescript": "^5.2.2"
+  }
+}

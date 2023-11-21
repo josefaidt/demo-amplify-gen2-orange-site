@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "tsx seed.ts"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "aws-amplify": "6.0.3",
+    "backend": "workspace:*",
+    "backend-schema": "workspace:*",
+    "tsx": "^4.2.0",
+    "typescript": "^5.3.2"
+  }
+}

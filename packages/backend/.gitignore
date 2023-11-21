@@ -1,0 +1,6 @@
+# amplify
+.amplify
+amplifyconfiguration*
+
+# no tsbuild
+amplify/tsconfig.tsbuildinfo

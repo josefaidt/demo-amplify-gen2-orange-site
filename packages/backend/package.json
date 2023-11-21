@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "exports": {
+    "./config": "./amplifyconfiguration.json"
+  },
+  "scripts": {
+    "dev": "amplify sandbox",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^0.5.4",
+    "@aws-amplify/backend-cli": "^0.9.0",
+    "backend-schema": "workspace:*",
+    "typescript": "^5.2.2",
+    "tsx": "^4.1.4",
+    "verification-email": "workspace:*"
+  }
+}
