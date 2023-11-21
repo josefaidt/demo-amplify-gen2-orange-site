@@ -1,6 +1,6 @@
 # demo-amplify-gen2-orange-site
 
-```console
+```bash
 # if you haven't done so already
 corepack enable
 # install deps
