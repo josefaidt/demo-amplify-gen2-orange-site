@@ -16,7 +16,9 @@ export default function LoginPage() {
 
   return (
     <div className="flex justify-center min-h-screen">
-      <Authenticator></Authenticator>
+      <Authenticator
+        signUpAttributes={['email', 'preferred_username']}
+      ></Authenticator>
     </div>
   )
 }

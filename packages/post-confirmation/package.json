@@ -4,7 +4,7 @@
   "type": "module",
   "exports": "./post-confirmation.ts",
   "devDependencies": {
-    "aws-amplify": "^6.0.3",
+    "aws-amplify": "6.0.4",
     "@types/aws-lambda": "^8.10.126",
     "typescript": "^5.2.2"
   }
