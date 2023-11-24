@@ -19,13 +19,6 @@ export default async function PostPage({ params }: { params: { id: string } }) {
         </span>
         {post.body ? <p>{post.body}</p> : null}
       </article>
-      <div>
-        {/* <CommentCreateForm
-          overrides={{
-            author: {},
-          }}
-        /> */}
-      </div>
       <div>{/* comments */}</div>
     </div>
   )

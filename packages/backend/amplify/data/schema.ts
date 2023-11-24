@@ -1,6 +1,6 @@
 import type { ClientSchema } from '@aws-amplify/backend'
 import { a } from '@aws-amplify/backend'
-import { MODELS, GROUPS } from './constants'
+import { MODELS, GROUPS } from '../constants'
 
 export const schema = a.schema({
   [MODELS.Post]: a
@@ -60,9 +60,14 @@ export const schema = a.schema({
   //     a.allow.owner().to(['create', 'read', 'delete']),
   //     a.allow.private('iam').to(['list']),
   //   ]),
-  // [MODELS.UserProfile]: a.model({
-  //   id: a.id(),
-  // }),
+  [MODELS.UserProfile]: a
+    .model({
+      id: a.id(),
+    })
+    .authorization([
+      a.allow.owner().to(['read', 'update']),
+      a.allow.private('iam').to(['read', 'update', 'delete']),
+    ]),
 })
 
 export type Schema = ClientSchema<typeof schema>

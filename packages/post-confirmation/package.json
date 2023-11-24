@@ -5,7 +5,8 @@
   "exports": "./post-confirmation.ts",
   "devDependencies": {
     "aws-amplify": "6.0.4",
-    "@types/aws-lambda": "^8.10.126",
-    "typescript": "^5.2.2"
+    "backend": "workspace:*",
+    "@types/aws-lambda": "^8.10.129",
+    "typescript": "^5.3.2"
   }
 }

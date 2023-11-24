@@ -1,5 +1,5 @@
 import { defineData } from '@aws-amplify/backend'
-import { schema } from 'backend-schema'
+import { schema } from './schema'
 
 export const data: ReturnType<typeof defineData> = defineData({
   schema,

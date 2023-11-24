@@ -1,4 +1,4 @@
-import type { Schema } from 'backend-schema'
+import type { Schema } from 'backend/schema'
 import { Amplify } from 'aws-amplify'
 import { generateClient } from 'aws-amplify/data'
 import config from 'backend/config'
@@ -8,7 +8,10 @@ Amplify.configure(config)
 const client = generateClient<Schema>()
 console.log('after configure', Amplify.getConfig())
 
-function createRandomPost(): Omit<Schema['Post'], 'id' | 'comments'> {
+function createRandomPost(): Omit<
+  Schema['Post'],
+  'id' | 'comments' | 'createdAt' | 'updatedAt'
+> {
   const link = faker.internet.url()
   return {
     author: faker.internet.userName(),
@@ -21,7 +24,10 @@ function createRandomPost(): Omit<Schema['Post'], 'id' | 'comments'> {
 
 function createRandomComment(
   postCommentsId: string,
-): Omit<Schema['Comment'], 'id' | 'post' | 'replies'> {
+): Omit<
+  Schema['Comment'],
+  'id' | 'post' | 'replies' | 'createdAt' | 'updatedAt'
+> {
   return {
     author: faker.internet.userName(),
     content: faker.lorem.paragraph(),
