@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"command": "pnpm run dev",
+			"cwd": "${workspaceFolder}/packages/amplify-emails",
+			"name": "amplify-emails",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"command": "pnpm run dev",
+			"cwd": "${workspaceFolder}/examples/my-app",
+			"name": "my-app",
+			"request": "launch",
+			"type": "node-terminal"
+		}
+	]
+}

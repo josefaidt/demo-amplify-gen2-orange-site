@@ -1,18 +1,15 @@
 {
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "pnpm run -r --parallel dev",
-    "build": "pnpm run -r build",
-    "test": "pnpm run -r test",
-    "seed": "pnpm --filter scripts run seed"
-  },
-  "devDependencies": {
-    "prettier": "^3.1.0"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "packageManager": "pnpm@8.10.5"
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "pnpm run --recursive --parallel dev",
+		"build": "pnpm run --recursive --parallel build",
+		"test": "pnpm run --recursive --parallel test",
+		"format": "biome format .",
+		"check": "biome check ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.5.2"
+	},
+	"packageManager": "pnpm@8.14.1+sha256.2df78e65d433d7693b9d3fbdaf431b2d96bb4f96a2ffecd51a50efe16e50a6a8"
 }
